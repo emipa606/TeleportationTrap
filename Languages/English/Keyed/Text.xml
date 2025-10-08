@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <TeTr.BeenTeleported>{0} has been teleported to {1}.</TeTr.BeenTeleported>
+  <TeTr.TeleportFailed>{0} failed to teleport, no target.</TeTr.TeleportFailed>
+  <TeTr.Distance> | Distance: {0}</TeTr.Distance>
+  <TeTr.ItemsInRoom>
+Items in linked room: {0}</TeTr.ItemsInRoom>
+  <TeTr.LinkTrap>Link trap</TeTr.LinkTrap>
+  <TeTr.UnLinkTrap>Unlink trap</TeTr.UnLinkTrap>
+  <TeTr.LinkTrapTT>Link this object to another compatible teleportation trap.</TeTr.LinkTrapTT>
+  <TeTr.UnLinkTrapTT>Unlink this teleportation trap connection.</TeTr.UnLinkTrapTT>
+  <TeTr.LinkedOK>Objects linked successfully.</TeTr.LinkedOK>
+  <TeTr.LinkedNotOK>Cannot link to this object.</TeTr.LinkedNotOK>
+  <TeTr.UnLinkedOK>All links removed successfully.</TeTr.UnLinkedOK>
+  <TeTr.UnLinkedNotOK>No links to remove.</TeTr.UnLinkedNotOK>
+  <TeTr.Teleport>Teleport</TeTr.Teleport>
+  <TeTr.TeleportTT>Teleport a pawn to the other linked object.</TeTr.TeleportTT>
+  <TeTr.TeleportOnlyPlayer>Only player-owned colonists and pets can be teleported.</TeTr.TeleportOnlyPlayer>
+  <TeTr.IsTeleporting>{0} is teleporting to {1}.</TeTr.IsTeleporting>
+  <TeTr.NoLinkFound>No valid linked object found.</TeTr.NoLinkFound>
+  <TeTr.NotLinked>This object is not linked to any other object.</TeTr.NotLinked>
+  <TeTr.SelectPawn>Please select a valid pawn.</TeTr.SelectPawn>
+  <TeTr.TeleportFailedInfo>Teleportation failed: Invalid target.</TeTr.TeleportFailedInfo>
+  <TeTr.TeleportFailedComp>Teleportation failed: Unknown target.</TeTr.TeleportFailedComp>
+  <TeTr.LinkedTo>Linked to: {0}</TeTr.LinkedTo>
+  <TeTr.LinkedToNone>Linked to: &lt;color=red>None.&lt;/color> Without a linked teleportation trap, this will function as a single-use trap and lose its teleportation ability. To preserve its functionality, either link it to another trap or uninstall it.</TeTr.LinkedToNone>
+  <TeTr.TeleportationMode>Teleportation mode</TeTr.TeleportationMode>
+  <TeTr.TeleportationModeTT>&lt;color=red>Toggle on to allow teleporting enemies to and from a linked trap, and toggle off to allow only receiving teleported enemies&lt;/color>. Enabled + Linked: Teleports enemies to its linked trap and receives from it; both traps are consumed. Disabled + Linked: Only receives teleported enemies; won't trigger on contact; both traps are consumed.Unlinked: Functions as a single-use spike trap with no teleportation.</TeTr.TeleportationModeTT>
+</LanguageData>
