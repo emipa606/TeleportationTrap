@@ -8,4 +8,13 @@
   <Project Path="TeleportationTrap/TeleportationTrap.csproj">
     <BuildType Project="Release" />
   </Project>
+  <Folder Name="/XML/Languages/English/Keyed/">
+    <File Path="../Languages/English/Keyed/Text.xml" />
+  </Folder>
+  <Folder Name="/XML/1.7/Defs/">
+    <File Path="../1.7/Defs/TeleportationTrapDefs.xml" />
+  </Folder>
+  <Folder Name="/XML/About/">
+    <File Path="../About/about.xml" />
+  </Folder>
 </Solution>

@@ -17,8 +17,8 @@ public class CompProperties_Linkable : CompProperties
     public readonly bool showLinkDistance = true;
     public readonly bool showLinkedObjects = true;
     public readonly bool showRoomItemsInfo = false;
-    public List<string> allowedLinkableDefs;
     public bool allowMultipleLinks = true;
+    public List<string> allowedLinkableDefs;
 
     public CompProperties_Linkable()
     {

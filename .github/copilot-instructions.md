@@ -1,39 +1,60 @@
-# Copilot Instructions for RimWorld Modding: Teleportation Trap (Continued)
+# GitHub Copilot Instructions for RimWorld Mod: Teleportation Trap (Continued)
 
-## Mod Overview and Purpose
-**Teleportation Trap (Continued)** is an update of the original mod by SilkCircuits, aiming to add a strategic layer to base defense in RimWorld. This mod introduces a novel security device capable of teleporting enemies to or from a linked trap. The main goal of this mod is to enhance gameplay by providing players with a powerful tool to manage raids and enemy movement strategically.
+## Overview and Purpose
+The **Teleportation Trap (Continued)** mod is an update to the SilkCircuits mod, adding a new security device to the RimWorld game. This device allows players to teleport enemies to or from a linked teleportation trap, making it an effective tool for both combat and raid management. The trap requires chemfuel for power and psychite tea to refine and amplify psychic energy.
 
 ## Key Features and Systems
-- **Teleportation Mechanism**: Devices teleport enemies to a designated linked trap, consuming both traps in the process.
-- **Resource Utilization**: Traps require steel, chemfuel, and psychite tea to be built and operated, integrating into the game's resource management mechanics.
-- **Linking Interface**: Easily manage trap links and settings through a custom interface menu, with visual indicators for linked (green line) and unlinked (yellow question mark) traps.
-- **Operational Modes**: 
-  - Enabled + Linked: Teleports and consumes both traps.
-  - Disabled + Linked: Acts as a receiver only and consumes both traps.
-  - Unlinked: Functions as a single-use, non-teleporting spike trap.
-- **Advanced Customization**: Supports glow color customization (requires Advanced Lights research) for aesthetic personalization.
-- **Safety Parameters**: Only targets enemies; colonists and animals are unaffected for balanced gameplay.
+- **Teleportation Functionality**: Players can link two teleportation traps to teleport enemies between them. When triggered, the trap locks onto an intruder’s signature and violently ejects them to the designated location.
+- **Customization Options**: Players can toggle the teleportation mode on and off and customize the glow color of the traps.
+- **Compatibility**: The mod is compatible with RimWorld 1.5+ and does not conflict with any other known mods.
 
 ## Coding Patterns and Conventions
-- **Class Organization**: Use descriptive class names like `Building_TrapTeleporter` and `Comp_Linkable` to clarify functionality. Each class should encapsulate related methods and properties.
-- **Method Naming**: Names like `ValidateLinkedObjects`, `DrawLinks`, and `LinkTo` clearly express their purpose, ensuring maintainability and readability.
-- **Encapsulation**: Keep methods such as `TriggerEffect` private if they are meant for internal use within a class, promoting encapsulation and preventing unintended access.
+- **Building_TrapTeleporter**: This class handles the core functionality of the teleportation trap, including its visual representation, data exposure, gizmos, linking, setup, and trigger effects.
+- **BuildingWithLinkable**: This abstract class is used for any building that can be linked to another building, providing common functionality for linkable components.
+- **Comp_Linkable**: This component handles the linking and unlinking of buildings, including drawing links, validating linked objects, and exposing data.
+- **ThingDefOf**: This class defines custom ThingDefs used by the mod, such as the teleportation trap itself.
+- **CompProperties_Linkable**: This class defines properties for the linkable component, allowing for customization in the mod's XML files.
 
 ## XML Integration
-The mod likely uses XML for defining various game elements such as trap costs, research requirements, and graphics. Ensure XML files define:
-- **Building Configurations**: Include status indicators, research prerequisites, and cost properties.
-- **Defining Trap Interactions**: Use XML to manage trap interactions and operational behaviors.
+The mod integrates with RimWorld's XML system to define various aspects of the teleportation trap:
+
+- **EffecterDef**: Defines the visual and audio effects of the teleportation trap.
+- **fleckDef**: Defines the visual effects, such as particles, associated with the teleportation process.
+- **JobDef**: Defines the jobs that the mod adds, such as the action of teleporting.
+- **minifiedDef**: Defines the minified versions of the teleportation trap.
+- **soundDef**: Defines the sound effects associated with the teleportation trap.
+- **ThingDef**: Defines the teleportation trap itself, including its appearance, cost, and other properties.
 
 ## Harmony Patching
-- **Purpose**: Use Harmony to alter or extend base game methods where necessary. This approach ensures compatibility with updates and other mods.
-- **Best Practices**: 
-  - Target specific methods that require modification or extension without redundantly patching unchanged or unrelated methods.
-  - Ensure Harmony patches are isolated by using unique IDs and descriptive naming for patches to clarify patch intentions and maintain traceability.
+The mod uses Harmony patching to integrate its functionality with the existing RimWorld codebase:
+
+- **TriggerEffect**: The trigger effect of the teleportation trap is patched to implement the teleportation logic.
+- **DrawExtraSelectionOverlays**: This method is patched to draw additional selection overlays, such as links, for linkable buildings.
+- **ExposeData**: This method is patched to expose data for serialization and deserialization.
+- **GetGizmos**: This method is patched to add custom gizmos, such as buttons for linking and unlinking traps.
 
 ## Suggestions for Copilot
-- **Keep Code Contextualized**: Given the defined classes and methods, assist in generating consistent method implementations that follow established naming conventions and coding styles.
-- **Suggesting Enhancements**: Propose improvements or optimizations in linking logic, such as caching linked states to reduce computation costs or enhance visual feedback.
-- **Error Handling**: Recommend incorporating robust error handling, especially in linking mechanics, to prevent null reference issues or invalid operations.
-- **Documenting**: Assist developers by proposing comments and summaries for complex methods and classes, enhancing codebase understandability for future contributors.
+To make the most of GitHub Copilot when working on the **Teleportation Trap (Continued)** mod:
 
-By adhering to these guidelines and utilizing Copilot for intelligent code suggestions, developers can efficiently extend and maintain the functionality of the Teleportation Trap mod while ensuring a seamless user experience in RimWorld.
+- **Code Completion**: Use Copilot to quickly generate code for new features, such as new gizmos or additional properties.
+- **Debugging**: Use Copilot to help identify and fix potential issues in existing code, particularly in complex methods like the trigger effect.
+- **XML Snippets**: Use Copilot to generate XML snippets for new Defs, ensuring consistency with existing definitions.
+- **Documentation**: Use Copilot to help generate documentation for new classes and methods, ensuring that the codebase remains easy to understand and maintain.
+
+By following these guidelines, you can leverage GitHub Copilot to enhance your development workflow and ensure that the **Teleportation Trap (Continued)** mod remains a valuable tool for RimWorld players.
+
+## Project Solution Guidelines
+- Relevant mod XML files are included as Solution Items under the solution folder named XML, these can be read and modified from within the solution.
+- Use these in-solution XML files as the primary files for reference and modification.
+- The `.github/copilot-instructions.md` file is included in the solution under the `.github` solution folder, so it should be read/modified from within the solution instead of using paths outside the solution. Update this file once only, as it and the parent-path solution reference point to the same file in this workspace.
+- When making functional changes in this mod, ensure the documented features stay in sync with implementation; use the in-solution `.github` copy as the primary file.
+- In the solution is also a project called Assembly-CSharp, containing a read-only version of the decompiled game source, for reference and debugging purposes.
+- For any new documentation, update this copilot-instructions.md file rather than creating separate documentation files.
+
+
+## Hard rules (must follow)
+- Do NOT run commands that modify the repo (no git commit, git apply, dotnet format) unless explicitly asked.
+- Prefer minimal reads: read only the smallest code region needed (around the suspicious lines).
+- When mentioning SonarQube issues, automatically use the SonarQube MCP service to fetch and address issues instead of making inferred fixes without querying SonarQube first.
+- When mentioning the rimworld log, automatically use the Rimworld MCP service to fetch the log.
+

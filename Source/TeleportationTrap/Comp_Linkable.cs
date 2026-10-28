@@ -170,13 +170,10 @@ public class Comp_Linkable : ThingComp
             ? "TeTr.LinkedTo".Translate(string.Join(", ", linkedThings.Select(t => t.LabelShortCap)))
             : "TeTr.LinkedToNone".Translate();
 
-        if (linkedThings.Count == 0)
+        if (linkedThings.Count == 0 && Props.drawOutOfFuelOverlay)
         {
             // Show overlay and warning
-            if (Props.drawOutOfFuelOverlay)
-            {
-                parent.Map.overlayDrawer.DrawOverlay(parent, OverlayTypes.QuestionMark);
-            }
+            parent.Map.overlayDrawer.DrawOverlay(parent, OverlayTypes.QuestionMark);
         }
 
         // Distance info for the first linked object

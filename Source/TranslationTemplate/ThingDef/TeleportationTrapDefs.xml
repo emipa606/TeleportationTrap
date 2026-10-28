@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: teleportation trap -->
+  <TeleporterTrapSpike.label>teleportation trap</TeleporterTrapSpike.label>
+  <!-- EN: This trap employs advanced technology to teleport enemies to a pre-linked destination. While chemfuel provides the raw power, psychite tea refines and amplifies psychic energy to isolate and project a target's physical form. When triggered, it locks onto an intruder’s signature and violently ejects them to the designated location. -->
+  <TeleporterTrapSpike.description>This trap employs advanced technology to teleport enemies to a pre-linked destination. While chemfuel provides the raw power, psychite tea refines and amplifies psychic energy to isolate and project a target's physical form. When triggered, it locks onto an intruder’s signature and violently ejects them to the designated location.</TeleporterTrapSpike.description>
+</LanguageData>

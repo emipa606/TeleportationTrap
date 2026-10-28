@@ -1,19 +1,19 @@
-# [Teleportation Trap (Continued)]()
+# [Teleportation Trap (Continued)](https://steamcommunity.com/sharedfiles/filedetails/?id=3583155120)
 
-![Image](https://i.postimg.cc/1X4HT06h/Info.png)
+![Image](https://img.litet.net/logos/Info.png)
 
 Update of SilkCircuits mod https://steamcommunity.com/sharedfiles/filedetails/?id=3409294011
 
-![Image](https://i.postimg.cc/8csH3dWV/Notice.png)
+![Image](https://img.litet.net/logos/Notice.png)
 	
-![Image](https://i.postimg.cc/hvhrw8xB/Original-Description.png)
+![Image](https://img.litet.net/logos/OriginalDescription.png)
 
 ### A marvel of frontier ingenuity and sadism, this security device teleports enemies to or from a linked teleportation trap. Use it to send drifters to your den of thrumbos or streamline raids by delivering enemies straight to the oven.
 
 
 While chemfuel provides the raw power, psychite tea refines and amplifies psychic energy to isolate and project a target's physical form. When triggered, it locks onto an intruder’s signature and violently ejects them to the designated location. 
 
-![Image](https://i.postimg.cc/cHrMQhRd/pXZimqS.gif)
+![Image](https://img.litet.net/pXZimqS.png)
 
 [hr][/hr]
 ### How To Use
@@ -29,7 +29,7 @@ While chemfuel provides the raw power, psychite tea refines and amplifies psychi
 [hr][/hr]
 ### Additional Functionality
 
-![Image](https://i.postimg.cc/hGC1z67x/xVRZJ2f.png)
+![Image](https://img.litet.net/xVRZJ2f.png)
 
 
  - **Link, unlink, or relink** traps from either trap’s interface menu. 
@@ -48,7 +48,7 @@ While chemfuel provides the raw power, psychite tea refines and amplifies psychi
 
 
 [hr][/hr]
-### **Credits &amp; Disclaimer**
+### **Credits and Disclaimer**
  
 
 - **Contributions:** Thanks to the RimWorld community for feature suggestions and balance tweaks.
@@ -56,10 +56,11 @@ While chemfuel provides the raw power, psychite tea refines and amplifies psychi
 
 
 
-![Image](https://i.postimg.cc/fLJjxCcN/4Wg8TVM.gif)
+![Image](https://img.litet.net/4Wg8TVM.png)
+
 Close one, Gowing...
 
-![Image](https://i.postimg.cc/x8qR7GH9/Reporting-Issues.png)
+![Image](https://img.litet.net/logos/ReportingIssues.png)
 
 
 
@@ -71,4 +72,6 @@ Close one, Gowing...
 -  If you have the solution for a problem, please post it to the GitHub repository.
 -  Use [RimSort](https://github.com/RimSort/RimSort/releases/latest) to sort your mods
 
+ 
 
+[![Image](https://img.shields.io/github/v/release/emipa606/TeleportationTrap?label=latest%20version&style=plastic&color=9f1111&labelColor=black)](https://steamcommunity.com/sharedfiles/filedetails/changelog/3583155120) | frontier ingenuity, security device
